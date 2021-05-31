@@ -1,1 +1,23 @@
 我是一个大帅哥
+
+
+git log --oneline  查看提交日志简化版
+
+git relog  查看仓库区所有的操作
+
+git reset --hard  版本号     回退到某一个版本 并重置工作区和暂存区
+git reset --mixed 版本号    回退到某一个版本 并重置暂存区
+git reset --soft 版本号   回到某一个版本 并重置仓库区
+
+.gitignore  配置忽略文件
+如果某个文件已经被提交了，那么此时直接忽略无效，需要先手动删除暂存区的这个文件，然后再配置忽略，提交
+
+git branch  查看所有的分支
+git branch 分支名  创建一个分支
+git checkout 分支名  切换到某个分支
+git checkout -b 分支名   创建并切换分支
+git checkout --orphan 分支名: 创建一个裸分支。裸分支和其他分支没有什么不同，就是裸分支开始的时候，没有父分支的commit提交记录
+
+git branch -d 分支名  删除某个分支
+
+git merge 分支名   合并分支
